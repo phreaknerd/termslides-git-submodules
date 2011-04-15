@@ -29,6 +29,8 @@ while [ 1 ]; do
     echo "Need some help?"; 
     eval $help;
     continue;
+  elif [ "$IN" = "b" ]; then 
+    let sl=$sl-1;
   elif [ "$IN" = "f" ]; then 
     let sl=1;
   elif [ "$IN" = "s" ]; then 
