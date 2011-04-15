@@ -10,6 +10,7 @@ else
 fi;
 
 sl=0;
+osl=$sl;
 ssl=$sl;
 cmd=$1
 
