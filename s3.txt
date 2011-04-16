@@ -1,29 +1,30 @@
-->GIT out of Dependency Hell-------------------------->Carsten Nielsen->carsten@redpill-linpro.com--
-                                                             \HMH\  /HH\.M|      |M./HH\  /HMH/
-                                                              \HMH\ |MHH\.|      |./HHM| /HMH/
-                                                               \HMH\\HMHH\|      |/HHMH//HMH/
-                                                                \HMH\\HMHH\      /HHMH//HMH/
-                                                                 \HMHH\HMHH\    /HHMH/HHMH/
-                                                                  \HHHH\HMHH\  /HHMH/HHHH/
-                                                                        \HMHH\-HHH\/
-                                                                        /\HMHH\.HHM\
-                                                                       /HM\HMHH\.HMH\
-                       Dependencies?                                  /HMH|\HMHH\\HMH\
-                                                                     /HMH/|H\HHH||\HMH\
-                                                                    /HMH/ |MH\H/M| \HMH\
-                                                                   /HMH/  |MH\/HM|  \HMH\
-                                                                  /HMH/   \HMH\MH/   \HMH\
-                                                                  |MH|__   \HMH\/   __|HM|
-                                                                  |M./HH\  /\HMH\  /HH\.M|
-                                                                  |./HHM| /HM\HMH\ |MHH\.|
-                                                                  |/HHMH//HMH/\HMH\\HMHH\|
-                                                                  /HHMH//HMH/  \HMH\\HMHH\
-                                                                 /HHMH/HHMH/    \HMHH\HMHH\
-                                                                /HHMH/HHHH/      \HHHH\HMHH\
-                                                          /HHH-/HHMH/                  \HMHH\-HHH\
-                                                         /MHH./HHMH/                    \HMHH\.HHM\
-                                                        /HMH./HHMH/                      \HMHH\.HMH\
-                                                       /HMH/|HHMH/|                      |\HMHH|\HMH
-                                                      /HMH/ \HMH/H|                      |H\HMH/ \HM
-                                                     /HMH/   \H/HM|                      |MH\H/   \H
-                                                     |MH/      /HM|                      |MH\      \
+-GIT-out-of-Dependecy-Hell--------------------------------------------------------------------------
+|                                                           \HMH\  /HH\.M|      |M./HH\  /HMH/     |
+|                                                            \HMH\ |MHH\.|      |./HHM| /HMH/      |
+|                                                             \HMH\\HMHH\|      |/HHMH//HMH/       |
+|                                                              \HMH\\HMHH\      /HHMH//HMH/        |
+|                                                               \HMHH\HMHH\    /HHMH/HHMH/         |
+|                                                                \HHHH\HMHH\  /HHMH/HHHH/          |
+|                                                                      \HMHH\-HHH\/                |
+|                   DEPENDENCIES?                                      /\HMHH\.HHM\                |
+|                                                                     /HM\HMHH\.HMH\               |
+|                                                                    /HMH|\HMHH\\HMH\              |
+|                                                                   /HMH/|H\HHH||\HMH\             |
+|                                                                  /HMH/ |MH\H/M| \HMH\            |
+|                                                                 /HMH/  |MH\/HM|  \HMH\           |
+|                                                                /HMH/   \HMH\MH/   \HMH\          |
+|                                                                |MH|__   \HMH\/   __|HM|          |
+|                                                                |M./HH\  /\HMH\  /HH\.M|          |
+|                                                                |./HHM| /HM\HMH\ |MHH\.|          |
+|                                                                |/HHMH//HMH/\HMH\\HMHH\|          |
+|                                                                /HHMH//HMH/  \HMH\\HMHH\          |
+|                                                               /HHMH/HHMH/    \HMHH\HMHH\         |
+|                                                              /HHMH/HHHH/      \HHHH\HMHH\        |
+|                                                        /HHH-/HHMH/                  \HMHH\-HHH\  |
+|                                                       /MHH./HHMH/                    \HMHH\.HHM\ |
+|                                                      /HMH./HHMH/                      \HMHH\.HMH\|
+|                                                     /HMH/|HHMH/|                      |\HMHH|\HMH|
+|                                                    /HMH/ \HMH/H|                      |H\HMH/ \HM|
+|                                                   /HMH/   \H/HM|                      |MH\H/   \H|
+|                                                   |MH/      /HM|                      |MH\      \|
+-Carsten-Nielsen------------------------------------------------------------------------------------

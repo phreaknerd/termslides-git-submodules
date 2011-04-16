@@ -16,6 +16,7 @@ ssl=1
 cmd=$1
 message=""
 mes=""
+script=0
 reader='read -sn1 -p "${mes}(${sl})>" IN';
 esc=$(eval 'echo -en "\e"');
 help='echo -e "
@@ -31,83 +32,110 @@ help='echo -e "
 You can use PgUp, PgDn, left, right, up, down and numeric values to jump to slides.\n"';
 
 while true; do
-  eval $reader
-  mes=""
-  case "$IN" in
-    $esc)
-      IN=""
-      while read -sn1 a; do
-        case $a in
-          "A" | "B" | "C" | "D" | "E" | "~" | "H" | "F" | "S" | "R" | "Q" | "P")
-            IN=$IN$a
-            break;;
-          *)
-            IN=$IN$a;;
-        esac
-      done;;
-    [0-9]*)
-      echo -n $IN
-      while read -sn1 a; do
-        echo -n $a
-        case $a in
-          [0-9]*)
-            IN=$IN$a;;
-          *)
-            break;;
-        esac
-      done;;
-  esac
-  echo $IN
-  case "$IN" in
-    "a") 
-      read -p "Time in seconds:" time
-      if [[ $time == 0 || $time == "" ]]; then 
-        message="Error: Please define a numeric value greater than 0."
-      else
-        auto=1
-        reader='read -t ${time} -sn1 -p "auto ${time}s (${sl})>" IN'
-      fi
-      ;;
-    "?" | "h")
-      echo "Need some help?" 
-      eval $help
-      continue;;
-    
-    "f" | "OH")
-      sl=1;;
+  
+  #only if not in script mode...
+  if [[ $script == 0 ]]; then
+    #input
+    eval $reader
+    mes=""
+    case "$IN" in
+      $esc)
+        IN=""
+        while read -sn1 a; do
+          case $a in
+            "A" | "B" | "C" | "D" | "E" | "~" | "H" | "F" | "S" | "R" | "Q" | "P")
+              IN=$IN$a
+              break;;
+            *)
+              IN=$IN$a;;
+          esac
+        done;;
+      ">")
+        script=1
+        ssl=$sl;;
+      [0-9]*)
+        echo -n $IN
+        while read -sn1 a; do
+          echo -n $a
+          case $a in
+            [0-9]*)
+              IN=$IN$a;;
+            *)
+              break;;
+          esac
+        done;;
+    esac
+    echo $IN
+  fi
+  
+  #only if not in script mode...
+  if [[ $script == 0 ]]; then
+    case "$IN" in
+      "a") 
+        read -p "Time in seconds:" time
+        if [[ $time == 0 || $time == "" ]]; then 
+          message="Error: Please define a numeric value greater than 0."
+        else
+          auto=1
+          reader='read -t ${time} -sn1 -p "auto ${time}s (${sl})>" IN'
+        fi
+        ;;
+      "?" | "h")
+        echo "Need some help?" 
+        eval $help
+        continue;;
       
-    "s")
-      mes="Position ${sl} saved. "
-      ssl=$sl;;
+      "f" | "OH")
+        sl=1;;
+        
+      "s")
+        mes="Position ${sl} saved. "
+        ssl=$sl;;
+        
+      "g")
+        mes="Opened stored slide. "
+        sl=$ssl;;
+        
+      "q")
+        echo "Bye bye!"
+        exit;;
+        
+      "p")
+        mes="Automatic paused. "
+        auto=0
+        reader='read -sn1 -p "${mes}(${sl})>" IN';;
       
-    "g")
-      mes="Opened stored slide. "
-      sl=$ssl;;
-      
-    "q")
-      echo "Bye bye!"
-      exit;;
-      
-    "p")
-      mes="Automatic paused. "
-      auto=0
-      reader='read -sn1 -p "${mes}(${sl})>" IN';;
-    
-    "[B" | "[D" | "[6~" | "b")
-      (( sl-- ));;
-      
-    [0-9]*)
-      sl=$IN
-      mes="Jumped to slide ${sl}. ";;
-      
-    "[A" | "[C" | "[5~" | *)
-      (( sl++ ));;
-  esac
+      "[B" | "[D" | "[6~" | "b")
+        (( sl-- ));;
+        
+      [0-9]*)
+        sl=$IN
+        mes="Jumped to slide ${sl}. ";;
+        
+      "[A" | "[C" | "[5~" | *)
+        (( sl++ ));;
+    esac
+  fi
+  
+  #output
   if [[ $message != "" ]]; then
     echo $message
     message=""
+  elif [[ $script == 1 ]]; then
+    read -p "me@local$>" IN
+    case $IN in
+      q)
+        script=0
+        clear
+        eval ${cmd/\?/$ssl}
+        echo;;
+      *)    
+        eval $IN
+        echo;;
+    esac;
   else
-    clear;
+    clear
     eval ${cmd/\?/$sl};
+    echo
   fi
 done;
