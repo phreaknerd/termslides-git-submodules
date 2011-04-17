@@ -11,7 +11,7 @@
 |                                         [0;36m"Y8888P"  8888888888     888      "Y88888P"  888         [0m|
 |                                                                                                  [0m|
 |                                                                                                  [0m|
-|            [0;37mme@local$>[1;37mgit clone /path/or/url/project.git[0m      [0;44m+-PUBLIC-REPO-------+[0m               [0m|
+|            [0;37mme@local$>[1;37mgit clone /pub/project.git        [0m      [0;44m+-PUBLIC-REPO-------+[0m               [0m|
 |                                                              [0;44m|                   |[0m               [0m|
 |                             [1;37m+------------------------------<[0m [0;44m| PROJECT           |[0m               [0m|
 |                             [1;37m|[0m                                [0;44m|                   |[0m               [0m|

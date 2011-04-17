@@ -17,9 +17,9 @@
 |          [0;37mme@local$>[1;37m ls others                                  [0;36m        ///            (_/_/      [0m|
 |                       |                                        [0;36m        |\\            [\\        [0m|
 |                       |              Everything ok?   [1mNope...  [0;36m        ||:|           | I|       [0m|
-|                       V                                        [0;36m        |::|           | I|       [0m|
-|              [0;42m+-LOCAL-REPO--------+[0m   [0;37mme@local$>[1;37m ls /pub/ext/extension  [0;36m||:|           | I|       [0m|
-|              [0;42m|                   |[0m                        [0;36m             ||:|           : \:       [0m|
+|                       V                                        [0;36m         ::|           | I|       [0m|
+|              [0;42m+-LOCAL-REPO--------+[0m   [0;37mme@local$>[1;37m ls others/ext/extension [0;36m :|           | I|       [0m|
+|              [0;42m|                   |[0m                        [0;36m              |:|           : \:       [0m|
 |              [0;42m| PROJECT           |[0m                        [0;36m             |\:|            \I|       [0m|
 |              [0;42m|                   |[0m   [1mWHERE ARE MY FILES?  [0;36m             :/\:            ([])      [0m|
 |              [0;42m+-------------------+[0m                        [0;36m             ([])             [|       [0m|
