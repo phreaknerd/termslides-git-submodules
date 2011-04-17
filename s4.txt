@@ -1,30 +1,30 @@
--GIT-out-of-Dependecy-Hell--------------------------------------------------------------------------
-|                                                           \HMH\  /HH\.M|      |M./HH\  /HMH/     |
-|                                                            \HMH\ |MHH\.|      |./HHM| /HMH/      |
-|                                                             \HMH\\HMHH\|      |/HHMH//HMH/       |
-|                                                              \HMH\\HMHH\      /HHMH//HMH/        |
-|                                                               \HMHH\HMHH\    /HHMH/HHMH/         |
-|                                                                \HHHH\HMHH\  /HHMH/HHHH/          |
-|                                                                      \HMHH\-HHH\/                |
-|                   DEPENDENCIES?                                      /\HMHH\.HHM\                |
-|                        __                                           /HM\HMHH\.HMH\               |
-|                       |  |                                         /HMH|\HMHH\\HMH\              |
-|                       |  |                                        /HMH/|H\HHH||\HMH\             |
-|                       |  |                                       /HMH/ |MH\H/M| \HMH\            |
-|                     __|  |__                                    /HMH/  |MH\/HM|  \HMH\           |
-|                     \      /                                   /HMH/   \HMH\MH/   \HMH\          |
-|                      \    /                                    |MH|__   \HMH\/   __|HM|          |
-|                       \  /                                     |M./HH\  /\HMH\  /HH\.M|          |
-|                        \/                                      |./HHM| /HM\HMH\ |MHH\.|          |
-|                                                                |/HHMH//HMH/\HMH\\HMHH\|          |
-|                   PLUG-INS                                     /HHMH//HMH/  \HMH\\HMHH\          |
-|                                                               /HHMH/HHMH/    \HMHH\HMHH\         |
-|                   EXTENSIONS                                 /HHMH/HHHH/      \HHHH\HMHH\        |
-|                                                        /HHH-/HHMH/                  \HMHH\-HHH\  |
-|                   EXTERNALS...                        /MHH./HHMH/                    \HMHH\.HHM\ |
-|                                                      /HMH./HHMH/                      \HMHH\.HMH\|
-|                                                     /HMH/|HHMH/|                      |\HMHH|\HMH|
-|                                                    /HMH/ \HMH/H|                      |H\HMH/ \HM|
-|                                                   /HMH/   \H/HM|                      |MH\H/   \H|
-|                                                   |MH/      /HM|                      |MH\      \|
--Carsten-Nielsen------------------------------------------------------------------------------------
+[1;37;40m-GIT-out-of-Dependecy-Hell--------------------------------------------------------------------------[0m
+|                                      [34m                     \HMH\  /HH\.M|      |M./HH\  /HMH/     [0m|
+|                                      [34m                      \HMH\ |MHH\.|      |./HHM| /HMH/      [0m|
+|                                      [34m                       \HMH\\HMHH\|      |/HHMH//HMH/       [0m|
+|                                      [34m                        \HMH\\HMHH\      /HHMH//HMH/        [0m|
+|                                      [34m                         \HMHH\HMHH\    /HHMH/HHMH/         [0m|
+|                                      [34m                          \HHHH\HMHH\  /HHMH/HHHH/          [0m|
+|                                      [34m                                \HMHH\-HHH\/                [0m|
+|                   [1mDEPENDENCIES?[0m      [34m                                /\HMHH\.HHM\                [0m|
+|       [1;31m                 __            [0;34m                               /HM\HMHH\.HMH\               [0m|
+|       [1;31m                |  |           [0;34m                              /HMH|\HMHH\\HMH\              [0m|
+|       [1;31m                |  |           [0;34m                             /HMH/|H\HHH||\HMH\             [0m|
+|       [1;31m                |  |           [0;34m                            /HMH/ |MH\H/M| \HMH\            [0m|
+|       [1;31m              __|  |__         [0;34m                           /HMH/  |MH\/HM|  \HMH\           [0m|
+|       [1;31m              \      /         [0;34m                          /HMH/   \HMH\MH/   \HMH\          [0m|
+|       [1;31m               \    /          [0;34m                          |MH|__   \HMH\/   __|HM|          [0m|
+|       [1;31m                \  /           [0;34m                          |M./HH\  /\HMH\  /HH\.M|          [0m|
+|       [1;31m                 \/            [0;34m                          |./HHM| /HM\HMH\ |MHH\.|          [0m|
+|                                      [34m                          |/HHMH//HMH/\HMH\\HMHH\|          [0m|
+|                   PLUG-INS           [34m                          /HHMH//HMH/  \HMH\\HMHH\          [0m|
+|                                      [34m                         /HHMH/HHMH/    \HMHH\HMHH\         [0m|
+|                   EXTENSIONS         [34m                        /HHMH/HHHH/      \HHHH\HMHH\        [0m|
+|                                       [34m                 /HHH-/HHMH/                  \HMHH\-HHH\  [0m|
+|                   EXTERNALS...       [34m                 /MHH./HHMH/                    \HMHH\.HHM\ [0m|
+|                                      [34m                /HMH./HHMH/                      \HMHH\.HMH\[0m|
+|                                      [34m               /HMH/|HHMH/|                      |\HMHH|\HMH[0m|
+|                                       [34m             /HMH/ \HMH/H|                      |H\HMH/ \HM[0m|
+|                                      [34m             /HMH/   \H/HM|                      |MH\H/   \H[0m|
+|                                      [34m             |MH/      /HM|                      |MH\      \[0m|
+[1;37;41m-Carsten-Nielsen------------------------------------------------------------------------------------[0m

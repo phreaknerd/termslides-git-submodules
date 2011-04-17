@@ -1,30 +1,30 @@
--GIT-out-of-Dependecy-Hell--------------------------------------------------------------------------
+[1;37;40m-GIT-out-of-Dependecy-Hell--------------------------------------------------------------------------[0m
 |                                                                                                  |
 |                                                                                                  |
 |                                                                                                  |
-|                                                                                      _,oooooooooo|
-|                                                                                  _ooOOOOOOOOOOOOO|
-| ooooooooo.                   .o8              o8o  oooo  oooo                  ,d...OOOOOOOOOOOOO|
-| `888   `Y88.                "888              `"'  `888  `888                ,.''   ''.OOOOOOOOOO|
-|  888   .d88'  .ooooo.   .oooo888  oo.ooooo.  oooo   888   888               d.'       '.OOOOOOOOO|
-|  888ooo88P'  d88' `88b d88' `888   888' `88b `888   888   888             ,OO:         :OOOOOOOOO|
-|  888`88b.    888ooo888 888   888   888   888  888   888   888            ,OOOO:       :OOOOOOOOOO|
-|  888  `88b.  888    .o 888   888   888   888  888   888   888            dOOOOO''...''OOOOOOOOOOO|
-| o888o  o888o `Y8bod8P' `Y8bod88P"  888bod8P' o888o o888o o888o          JOOOOOOOOOOOOOOOOOOOOOOOO|
-|                                    888                                  dOOOOOOOOOOOOOOOOOOOOOOOO|
-|                                   o888o                                 dOOOOOOOOOOOOOOOOOOOOOOOO|
-|                                                                         YOOOOOOOOOOOOOOOOOOOOOOOO|
-| ooooo         o8o                                                        OOOOOOOOOOOOOOOOOOOOOOOO|
-| `888'         `"'                                                        `OOOOOOOOOOOOOOOOOOOOOOO|
-|  888         oooo  ooo. .oo.   oo.ooooo.  oooo d8b  .ooooo.               YOOOOOOOOOOOOOOOOOOOOOO|
-|  888         `888  `888P"Y88b   888' `88b `888""8P d88' `88b               `OOOOOOOOOOOOOOOOOOOOO|
-|  888          888   888   888   888   888  888     888   888                 YOOOOOOOOOOOOOOOOOOO|
-|  888       o  888   888   888   888   888  888     888   888                  `YOOOOOOOOOOOOOOOOO|
-| o888ooooood8 o888o o888o o888o  888bod8P' d888b    `Y8bod8P'                     `POOOOOOOOOOOOOO|
-|                                 888                                                 '`YPPOOOOOOPP|
+|                                                                                      [31m_,oooooooooo[0m|
+|                                                                                  [31m_ooOOOOOOOOOOOOO[0m|
+| ooooooooo.                   .o8              o8o  oooo  oooo                  [31m,d...OOOOOOOOOOOOO[0m|
+| `888   `Y88.                "888              `"'  `888  `888                [31m,.''   ''.OOOOOOOOOO[0m|
+|  888   .d88'  .ooooo.   .oooo888  oo.ooooo.  oooo   888   888               [31md.'       '.OOOOOOOOO[0m|
+|  888ooo88P'  d88' `88b d88' `888   888' `88b `888   888   888             [31m,OO:         :OOOOOOOOO[0m|
+|  888`88b.    888ooo888 888   888   888   888  888   888   888            [31m,OOOO:       :OOOOOOOOOO[0m|
+|  888  `88b.  888    .o 888   888   888   888  888   888   888            [31mdOOOOO''...''OOOOOOOOOOO[0m|
+| o888o  o888o `Y8bod8P' `Y8bod88P"  888bod8P' o888o o888o o888o          [31mJOOOOOOOOOOOOOOOOOOOOOOOO[0m|
+|                                    888                                  [31mdOOOOOOOOOOOOOOOOOOOOOOOO[0m|
+|                                   o888o                                 [31mdOOOOOOOOOOOOOOOOOOOOOOOO[0m|
+|                                                                         [31mYOOOOOOOOOOOOOOOOOOOOOOOO[0m|
+| ooooo         o8o                                                        [31mOOOOOOOOOOOOOOOOOOOOOOOO[0m|
+| `888'         `"'                                                        [31m`OOOOOOOOOOOOOOOOOOOOOOO[0m|
+|  888         oooo  ooo. .oo.   oo.ooooo.  oooo d8b  .ooooo.               [31mYOOOOOOOOOOOOOOOOOOOOOO[0m|
+|  888         `888  `888P"Y88b   888' `88b `888""8P d88' `88b               [31m`OOOOOOOOOOOOOOOOOOOOO[0m|
+|  888          888   888   888   888   888  888     888   888                 [31mYOOOOOOOOOOOOOOOOOOO[0m|
+|  888       o  888   888   888   888   888  888     888   888                  [31m`YOOOOOOOOOOOOOOOOO[0m|
+| o888ooooood8 o888o o888o o888o  888bod8P' d888b    `Y8bod8P'                     [31m`POOOOOOOOOOOOOO[0m|
+|                                 888                                                 [31m'`YPPOOOOOOPP[0m|
 |                                o888o                                                             |
-|                                              UTVECKLARKVÄLL i GÖTEBORG                           |
+|                                              [1;31mUTVECKLARKVÄLL i GÖTEBORG[0m                           |
 |                                                                                                  |
 |                                                                                                  |
 |                                                                                                  |
--Carsten-Nielsen------------------------------------------------------------------------------------
+[1;37;41m-Carsten-Nielsen------------------------------------------------------------------------------------[0m
