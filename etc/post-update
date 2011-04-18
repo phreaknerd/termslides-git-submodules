@@ -1,0 +1,26 @@
+#!/bin/sh
+#
+# An example hook script to prepare a packed repository for use over
+# dumb transports.
+#
+# To enable this hook, rename this file to "post-update".
+
+echo
+echo "**** Pulling changes into prod [public post-update hook]"
+echo
+
+cd ~/git/prod/project || exit
+unset GIT_DIR
+git pull origin master
+
+echo
+echo "**** Pulling submodules into prod [public post-update hook]"
+echo
+
+git submodule init
+git submodule update
+
+
+# this is a git-default action if you provide the repo
+# via dumb protocols like http...
+exec git update-server-info
