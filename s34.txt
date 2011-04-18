@@ -1,30 +1,30 @@
 -GIT-out-of-Dependecy-Hell--------------------------------------------------------------------------
 |                                                                                                  |
 |                                                                                                  |
+|          Ouch!                                        888888b.         d8888 888b     d888 888   |
+|                                                       888  "88b       d88888 8888b   d8888 888   |
+|                                                       888  .88P      d88P888 88888b.d88888 888   |
+|          Answer: The project is                       8888888K.     d88P 888 888Y88888P888 888   |
+|                  OUT OF SYNC WITH THE EXTENSION!      888  "Y88b   d88P  888 888 Y888P 888 888   |
+|                                                       888    888  d88P   888 888  Y8P  888 Y8P   |
+|          Why?    The project points to a commit       888   d88P d8888888888 888   "   888  "    |
+|                  in the submodule that isn't          8888888P" d88P     888 888       888 888   |
+|                  present at /public/extension.git                                                |
 |                                                                                                  |
 |                                                                                                  |
-|                                                       Carsten Nielsen                            |
-|        ______  __  __  ______  __  __  __  __                                                    |
-|       /\__  _\/\ \/\ \/\  _  \/\ \/\ \/\ \/\ \          carsten@redpill-linpro.com               |
-|       \/_/\ \/\ \ \_\ \ \ \L\ \ \ `\\ \ \ \/'/'         phreaknerd@jabber.org                    |
-|          \ \ \ \ \  _  \ \  __ \ \ , ` \ \ , <                                                   |
-|           \ \ \ \ \ \ \ \ \ \/\ \ \ \`\ \ \ \\`\                                                 |
-|            \ \_\ \ \_\ \_\ \_\ \_\ \_\ \_\ \_\ \_\                                               |
-|             \/_/  \/_/\/_/\/_/\/_/\/_/\/_/\/_/\/_/                                               |
-|                                                       Please check out ASCII-Art:                |
-|                                                                                                  |
-|        __    __  _____   __  __  __                     http://www.chris.com/                    |
-|       /\ \  /\ \/\  __`\/\ \/\ \/\ \                    http://www.geocities.com/SoHo/7373/      |
-|       \ `\`\\/'/\ \ \/\ \ \ \ \ \ \ \                                                            |
-|        `\ `\ /'  \ \ \ \ \ \ \ \ \ \ \                                                           |
-|          `\ \ \   \ \ \_\ \ \ \_\ \ \_\                                                          |
-|            \ \_\   \ \_____\ \_____\/\_\              Soon on slideshare.net:                    |
-|             \/_/    \/_____/\/_____/\/_/                                                         |
-|                                                           http://www.slideshare.net/phreaknerd   |
-|                                                                                                  |
-|                                                       and on github:                             |
-|                                                                                                  |
-|                                                           https://github.com/phreaknerd/         |
-|                                                                                                  |
+|                  git version 1.7.4 --+                                                           |
+|                                      |                                                           |
+|                                      V                     8888                                  |
+|             aa        - not adding unstaged                8888      NEVER COMMIT                |
+|             88          submodule changes to               8888                                  |
+|         aaaa88aaaa      the project                        8888      UNPUSHED SUBMODULE CHANGES  |
+|         """"88""""                                         8888                                  |
+|             88        - not adding uncommited              8888      TO YOUR PUBLIC PROJECT      |
+|             ""          submodule changes to                                                     |
+|                         the project                        8888                                  |
+|                                                            8888                                  |
+|                       - not overwriting                                                          |
+|                         submodules silently                                                      |
+|                         with git submodule update                                                |
 |                                                                                                  |
 -Carsten-Nielsen------------------------------------------------------------------------------------
