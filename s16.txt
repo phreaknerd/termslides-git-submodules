@@ -11,7 +11,7 @@
 |                                         "Y8888P"  8888888888     888      "Y88888P"  888         |
 |                                                                                                  |
 |                                                                                                  |
-|            me@local$>git clone /path/or/url/project.git      +-PUBLIC-REPO-------+               |
+|            me@local$>git clone /pub/project.git              +-PUBLIC-REPO-------+               |
 |                                                              |                   |               |
 |                             +------------------------------< | PROJECT           |               |
 |                             |                                |                   |               |

@@ -11,7 +11,7 @@
 |                              |            ````    ``````````     ```        |````    ```         |
 |                              |     me@local$> mkdir ext                                          |
 |                              V                                              |                    |
-|                          _______   me@local$> git submodule add /path/extension.git ext/extension|
+|                          _______   me@local$> git submodule add /pub/extension.git ext/extension |
 |                         /extens.\__                                         |                    |
 |                      __|________   |                                        |                    |
 |                      \          \  |                                        |                    |
