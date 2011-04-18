@@ -1,30 +1,30 @@
 [1;37;40m-GIT-out-of-Dependecy-Hell--------------------------------------------------------------------------[0m
 |                                                                                                  [0m|
 |                                                                                                  [0m|
+|          [1;31mOuch![0m                                        [0;36m888888b.         d8888 888b     d888 888   [0m|
+|                                                       [0;36m888  "88b       d88888 8888b   d8888 888   [0m|
+|                                                       [0;36m888  .88P      d88P888 88888b.d88888 888   [0m|
+|          Answer: The project is                       [0;36m8888888K.     d88P 888 888Y88888P888 888   [0m|
+|                  [1mOUT OF SYNC WITH THE EXTENSION!      [0;36m888  "Y88b   d88P  888 888 Y888P 888 888   [0m|
+|                                                       [0;36m888    888  d88P   888 888  Y8P  888 Y8P   [0m|
+|          Why?    The project points to a commit       [0;36m888   d88P d8888888888 888   "   888  "    [0m|
+|                  in the submodule that isn't          [0;36m8888888P" d88P     888 888       888 888   [0m|
+|                  present at /public/extension.git                                                [0m|
 |                                                                                                  [0m|
 |                                                                                                  [0m|
-|                                                       [1;37mCarsten Nielsen                            [0m|
-|   [1;31m     ______  __  __  ______  __  __  __  __                                                    [0m|
-|   [1;31m    /\__  _\/\ \/\ \/\  _  \/\ \/\ \/\ \/\ \        [0;37m  carsten@redpill-linpro.com               [0m|
-|   [1;31m    \/_/\ \/\ \ \_\ \ \ \L\ \ \ `\\ \ \ \/'/'       [0;37m  phreaknerd@jabber.org                    [0m|
-|   [1;31m       \ \ \ \ \  _  \ \  __ \ \ , ` \ \ , <                                                   [0m|
-|   [1;31m        \ \ \ \ \ \ \ \ \ \/\ \ \ \`\ \ \ \\`\                                                 [0m|
-|   [1;31m         \ \_\ \ \_\ \_\ \_\ \_\ \_\ \_\ \_\ \_\                                               [0m|
-|   [1;31m          \/_/  \/_/\/_/\/_/\/_/\/_/\/_/\/_/\/_/                                               [0m|
-|                                                       [1;37mPlease check out ASCII-Art:                [0m|
-|                                                                                                  [0m|
-|   [1;31m     __    __  _____   __  __  __                  [0;37m   http://www.chris.com/                    [0m|
-|   [1;31m    /\ \  /\ \/\  __`\/\ \/\ \/\ \                 [0;37m   http://www.geocities.com/SoHo/7373/      [0m|
-|   [1;31m    \ `\`\\/'/\ \ \/\ \ \ \ \ \ \ \                                                            [0m|
-|   [1;31m     `\ `\ /'  \ \ \ \ \ \ \ \ \ \ \                                                           [0m|
-|   [1;31m       `\ \ \   \ \ \_\ \ \ \_\ \ \_\                                                          [0m|
-|   [1;31m         \ \_\   \ \_____\ \_____\/\_\              [1;37mSoon on slideshare.net:                    [0m|
-|   [1;31m          \/_/    \/_____/\/_____/\/_/                                                         [0m|
-|                                                          [0;37m http://www.slideshare.net/phreaknerd   [0m|
-|                                                                                                  [0m|
-|                                                       [1;37mand on github:                             [0m|
-|                                                                                                  [0m|
-|                                                          [0;37m https://github.com/phreaknerd/         [0m|
-|                                                                                                  [0m|
+|                  [1mgit version 1.7.4 --+                                                           [0m|
+|                                      |                                                           [0m|
+|                                      V                     [1;31m8888                                  [0m|
+|             [1;32maa[0m        - not adding unstaged                [1;31m8888      NEVER COMMIT                [0m|
+|             [1;32m88[0m          submodule changes to               [1;31m8888                                  [0m|
+|         [1;32maaaa88aaaa[0m      the project                        [1;31m8888      UNPUSHED SUBMODULE CHANGES  [0m|
+|         [1;32m""""88""""[0m                                         [1;31m8888                                  [0m|
+|             [1;32m88[0m        - not adding uncommited              [1;31m8888      TO YOUR PUBLIC PROJECT      [0m|
+|             [1;32m""[0m          submodule changes to                                                     [0m|
+|                         the project                        [1;31m8888                                  [0m|
+|                                                            [1;31m8888                                  [0m|
+|                       - not overwriting                                                          [0m|
+|                         submodules silently                                                      [0m|
+|                         with git submodule update                                                [0m|
 |                                                                                                  [0m|
 [1;37;41m-Carsten-Nielsen------------------------------------------------------------------------------------[0m
