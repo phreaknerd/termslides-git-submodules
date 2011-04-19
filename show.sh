@@ -1,18 +1,17 @@
 #!/bin/bash
 # git-submodules-presenter script by Carsten Nielsen <carsten@redpill-linpro.com>
 
-# Set the absolute path of your testsetup here.
-# path=/home/carsten/git
-path="/home/carsten/git"
+# Set an alternative path for your testsetup here.
+path="/home/carsten/git";
 
 
 ## Setup
 if [ "$1" == "setup" ]; then
-  if [ -d $path ]; then
+  if [ ! -d $path ]; then
     echo "Seems the target directory ($path) is not existing!"
     exit;
   elif [ "$(ls $path)" ]; then
-    echo "No setup! Seems the target directory ($path) is not empty!"
+    echo "Seems the target directory ($path) is not empty!"
     exit;
   else
     cd $path
