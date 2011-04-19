@@ -3,28 +3,28 @@
 |                                                                                                  [0m|
 |                                                                                                  [0m|
 |                                                                                                  [0m|
-|                                                       [1;37mCarsten Nielsen                            [0m|
+|                                                       [1mCarsten Nielsen                            [0m|
 |   [1;31m     ______  __  __  ______  __  __  __  __                                                    [0m|
-|   [1;31m    /\__  _\/\ \/\ \/\  _  \/\ \/\ \/\ \/\ \        [0;37m  carsten@redpill-linpro.com               [0m|
-|   [1;31m    \/_/\ \/\ \ \_\ \ \ \L\ \ \ `\\ \ \ \/'/'       [0;37m  phreaknerd@jabber.org                    [0m|
+|   [1;31m    /\__  _\/\ \/\ \/\  _  \/\ \/\ \/\ \/\ \        [0m  carsten@redpill-linpro.com               [0m|
+|   [1;31m    \/_/\ \/\ \ \_\ \ \ \L\ \ \ `\\ \ \ \/'/'       [0m  phreaknerd@jabber.org                    [0m|
 |   [1;31m       \ \ \ \ \  _  \ \  __ \ \ , ` \ \ , <                                                   [0m|
 |   [1;31m        \ \ \ \ \ \ \ \ \ \/\ \ \ \`\ \ \ \\`\                                                 [0m|
 |   [1;31m         \ \_\ \ \_\ \_\ \_\ \_\ \_\ \_\ \_\ \_\                                               [0m|
 |   [1;31m          \/_/  \/_/\/_/\/_/\/_/\/_/\/_/\/_/\/_/                                               [0m|
-|                                                       [1;37mPlease check out ASCII-Art:                [0m|
+|                                                       [1mPlease check out ASCII-Art:                [0m|
 |                                                                                                  [0m|
-|   [1;31m     __    __  _____   __  __  __                  [0;37m   http://www.chris.com/                    [0m|
-|   [1;31m    /\ \  /\ \/\  __`\/\ \/\ \/\ \                 [0;37m   http://www.geocities.com/SoHo/7373/      [0m|
+|   [1;31m     __    __  _____   __  __  __                  [0m   http://www.chris.com/                    [0m|
+|   [1;31m    /\ \  /\ \/\  __`\/\ \/\ \/\ \                 [0m   http://www.geocities.com/SoHo/7373/      [0m|
 |   [1;31m    \ `\`\\/'/\ \ \/\ \ \ \ \ \ \ \                                                            [0m|
 |   [1;31m     `\ `\ /'  \ \ \ \ \ \ \ \ \ \ \                                                           [0m|
 |   [1;31m       `\ \ \   \ \ \_\ \ \ \_\ \ \_\                                                          [0m|
-|   [1;31m         \ \_\   \ \_____\ \_____\/\_\              [1;37mSoon on slideshare.net:                    [0m|
+|   [1;31m         \ \_\   \ \_____\ \_____\/\_\              [0;1mSoon on slideshare.net:                    [0m|
 |   [1;31m          \/_/    \/_____/\/_____/\/_/                                                         [0m|
-|                                                          [0;37m http://www.slideshare.net/phreaknerd   [0m|
+|                                                          [0m http://www.slideshare.net/phreaknerd   [0m|
 |                                                                                                  [0m|
-|                                                       [1;37mand on github:                             [0m|
+|                                                       [1mand on github:                             [0m|
 |                                                                                                  [0m|
-|                                                          [0;37m https://github.com/phreaknerd/         [0m|
+|                                                          [0m https://github.com/phreaknerd/         [0m|
 |                                                                                                  [0m|
 |                                                                                                  [0m|
 [1;37;41m-Carsten-Nielsen------------------------------------------------------------------------------------[0m

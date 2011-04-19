@@ -14,13 +14,13 @@
 |                                                |         [1;32m,'_ ""--.:__;".-.";: :".-.":__;.--"" _`,[0m|
 |                       -------------------------+         [1;32m:' `.t""--.. '<@.`;_  ',@>` ..--""j.' `;[0m|
 |                       |                                  [1;32m     `:-.._J '-.-'L__ `-- ' L_..-;'     [0m|
-|                [0;37mme@local$>[1;37m git submodule init             [1;32m       "-.__ ;  .-"  "-.  : __.-"       [0m|
-|                [0;37mme@local$>[1;37m git submodule update           [1;32m           L ' /.------.\ ' J           [0m|
+|                [0mme@local$>[1m git submodule init             [1;32m       "-.__ ;  .-"  "-.  : __.-"       [0m|
+|                [0mme@local$>[1m git submodule update           [1;32m           L ' /.------.\ ' J           [0m|
 |                       |                                  [1;32m            "-.   "--"   .-"            [0m|
 |                       V                                  [1;32m           __.l"-:_JL_;-";.__           [0m|
 |              [0;42m+-LOCAL-REPO--------+[0m  [1mBUT FOR THE GIT-PADAWAN[1;33m      .-j/[1;32m'.;  ;""""  / .'[1;33m\"-.        [0m|
 |              [0;42m|                   |[0m                                                   [1;33m    `.      [0m|
-|              [0;42m| PROJECT           |[0m  [0;37mme@local$>[1;37m git clone --recursive /pub/project.git   [1;33m   "-.   [0m|
+|              [0;42m| PROJECT           |[0m  [0mme@local$>[1m git clone --recursive /pub/project.git   [1;33m   "-.   [0m|
 |              [0;42m|                   |[0m                                                [1;33m     ;-._   \  [0m|
 |              [0;42m+-------------------+[0m                       [1;33m; \  `.; ;                    : : "+. ; [0m|
 |                                                          [1;33m:  ;   ; ;                    : ;  : \: [0m|

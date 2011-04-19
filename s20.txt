@@ -5,10 +5,10 @@
 |                                                 [0;36m888     888     888 888     888 888d88K          [0m|
 |                                                 [0;36m888     888     888 888     888 8888888b         [0m|
 |               [0;33m_______[0m                       [0;36m    888     888     888 888     888 888  Y88b        [0m|
-|             [0;33m /.git   \[0m__   [1;37mIt's a repo![0m   [0;36m      888     Y88b. .d88P Y88b. .d88P 888   Y88b       [0m|
+|             [0;33m /.git   \[0m__   [1mIt's a repo![0m   [0;36m      888     Y88b. .d88P Y88b. .d88P 888   Y88b       [0m|
 |           [0;33m__|________   |[0m                     [0;36m  88888888 "Y88888P"   "Y88888P"  888    Y88b      [0m|
 |           [0;33m\          \  |[0m>---+                                                                   [0m|
-|           [0;33m \          \ |[0m    |         [0;37mme@local$>[1;37m git status                                     [0m|
+|           [0;33m \          \ |[0m    |         [0mme@local$>[1m git status                                     [0m|
 |            [0;33m \__________\|[0m    |                                                                   [0m|
 |                              V                                                                   [0m|
 |                        [0;33m  _______[0m                                                                 [0m|
@@ -23,7 +23,7 @@
 |              [0;42m| PROJECT           |[0m <--------+          Stores the info about the submodule.      [0m|
 |              [0;42m|                   |[0m                                                               [0m|
 |              [0;42m+-------------------+[0m                                                               [0m|
-|                                        [0;37mme@local$>[1;37m ls -a ext/extension                            [0m|
+|                                        [0mme@local$>[1m ls -a ext/extension                            [0m|
 |                                                                                                  [0m|
 |                                                        Aaah! And even the files are there        [0m|
 |                                                        and the extension is a .git-repo!         [0m|

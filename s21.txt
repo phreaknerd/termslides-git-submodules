@@ -12,9 +12,9 @@
 |              [0;46m+--------^----------+[0m                                                               [0m|
 |                       |                                                                          [0m|
 |                       |                                                                          [0m|
-|     [0;37mme@local$>[1;37m git add .                                                                         [0m|
-|     [0;37mme@local$>[1;37m git commit -m "push it!"                                                          [0m|
-|     [0;37mme@local$>[1;37m git push                                                                          [0m|
+|     [0mme@local$>[1m git add .                                                                         [0m|
+|     [0mme@local$>[1m git commit -m "push it!"                                                          [0m|
+|     [0mme@local$>[1m git push                                                                          [0m|
 |                       |                                                                          [0m|
 |                       |                                                                          [0m|
 |                       ^                                                                          [0m|

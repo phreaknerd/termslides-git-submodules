@@ -12,15 +12,15 @@
 |              [0;46m+--------^----------+[0m            [0;33m  ............................                     [0m|
 |                       |                        [0;33m ....   ..   ....   ..   ....                     [0m|
 |                       |                       [0;33m   ..          ..          ..                      [0m|
-|     [0;37mme@local$>[1;37m git add .                                                                         [0m|
-|     [0;37mme@local$>[1;37m git commit -m "push it!"                                                          [0m|
-|     [0;37mme@local$>[1;37m git push                              THIS ADDS .gitmodules file AND              [0m|
+|     [0mme@local$>[1m git add .                                                                         [0m|
+|     [0mme@local$>[1m git commit -m "push it!"                                                          [0m|
+|     [0mme@local$>[1m git push                              THIS ADDS .gitmodules file AND              [0m|
 |                       |                                                                          [0m|
 |                       |                              THE commit-hash TO THE project.             [0m|
 |                       ^                                                                          [0m|
 |              [0;42m+-LOCAL-REPO--------+[0m                            NO EXTENSION FILES.                [0m|
 |              [0;42m|                   |[0m                       `                                       [0m|
-|              [0;42m| PROJECT           |[0m           [0;30m          >>>>>>>    [0;37mme@local$>[1;37m git diff HEAD^      [0m|
+|              [0;42m| PROJECT           |[0m           [0;30m          >>>>>>>    [0mme@local$>[1m git diff HEAD^      [0m|
 |              [0;42m|                   |[0m           [0;30m          >>>>>>>                                   [0m|
 |              [0;42m+-------------------+[0m    [0;30m.                >>>>>>>                                ~. [0m|
 |                     [0;30m     .         >>>>>>>>>>>>>>      >>>>>>>         .                         [0m|
