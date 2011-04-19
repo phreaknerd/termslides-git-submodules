@@ -3,7 +3,7 @@
 
 # Set the absolute path of your testsetup here.
 # path=/home/carsten/git
-path="~/git"
+path="/home/carsten/git"
 
 
 ## Setup
