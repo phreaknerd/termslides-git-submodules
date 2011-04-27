@@ -22,27 +22,27 @@ mes=""
 script=0
 
 ##The array of commands
-scriptcmd[0]="cd $path;"
-scriptcmd[15]='ls -a; ls -a public; ls -a local' 
-scriptcmd[16]="cd local; git clone $path/public/project.git; ls -a; ls -a project"
-scriptcmd[18]="cd project; mkdir ext; git submodule add $path/public/extension.git ext/extension"
-scriptcmd[19]='git status; cat .gitmodules';
-scriptcmd[20]='ls -a ext/extension';
-scriptcmd[21]='git add .; git commit -m "Push it!"; git push';
-scriptcmd[23]='git diff HEAD^';
-scriptcmd[25]="cd ..; ls -a; git clone $path/public/project.git others; ls -a others";
-scriptcmd[26]='cd others; ls -a ext/extension'
-scriptcmd[28]='git submodule init; git submodule update'
-scriptcmd[29]="cd ..; rm -Rf others; git clone --recursive $path/public/project.git others; ls others/ext/extension";
-scriptcmd[31]='cd project/ext/extension; echo "A new file in extension." > newfile.txt; ls; git status; git add .; git status; git commit -m "Add a new file."'
-scriptcmd[32]='cd ../..; echo "A new file in project." > newprojectfile.txt; ls; git status; git add . ; git status; git commit -m "Add a new file to project."; git push'
-scriptcmd[33]='cd ../others; git pull; git submodule update'
-scriptcmd[34]='cd ../../public/extension.git; git log'
+scriptcmd[0]='cd $path;'
+scriptcmd[15]='ls -a;ls -a public;ls -a local' 
+scriptcmd[16]="cd local;git clone $path/public/project.git;ls -a; ls -a project"
+scriptcmd[18]="cd local/project;mkdir ext;git submodule add $path/public/extension.git ext/extension"
+scriptcmd[19]='cd local/project;git status; cat .gitmodules';
+scriptcmd[20]='cd local/project;ls -a ext/extension';
+scriptcmd[21]='cd local/project;git add .;git commit -m "Push it!";git push';
+scriptcmd[23]='cd local/project;git diff HEAD^';
+scriptcmd[25]="cd local; ls -a;git clone $path/public/project.git others;ls -a others";
+scriptcmd[26]='cd local/others;ls -a ext/extension'
+scriptcmd[28]='cd local/others;git submodule init;git submodule update'
+scriptcmd[29]="cd local;rm -Rf others;git clone --recursive $path/public/project.git others;ls others/ext/extension";
+scriptcmd[31]='cd local/project/ext/extension;echo "A new file in extension." > newfile.txt;ls;git status;git add .;git status;git commit -m "Add a new file."'
+scriptcmd[32]='cd local/project;echo "A new file in project." > newprojectfile.txt;ls;git status;git add . ;git status;git commit -m "Add a new file to project.";git push'
+scriptcmd[33]='cd local/others;git pull;git submodule update'
+scriptcmd[34]='cd public/extension.git;git log'
 
 reader='read -sn1 -p "${mes}(${sl})>" IN';
 
 esc=$(eval 'echo -en "\e"');
-help='echo -e "
+help='echo -e "\n
 \e[1mh\e[0m or \e[1m?\e[0m - show this help ;-)\n
 \e[1menter\e[0m - start and next\n
 \e[1mf\e[0m - first page is opened\n
@@ -56,44 +56,43 @@ help='echo -e "
 You can use PgUp, PgDn, left, right, up, down and numeric values to jump to slides.\n\n
 
 If you see a "'*'" at the prompt, there are some commands to execute for the actual slide.\n\n
-Press > to open console. If you hit enter, the commands in the brackets will be executed and the output is shown."';
+Press > to open console. If you just hit enter, the commands in the brackets will be executed and the output is shown.\n\n"';
 
 if [ "$1" == "install" ]; then
   if [ ! -d $path ]; then
-    echo "Seems the target directory ($path) is not existing!"
+    echo "Seems that the target directory ($path) is not existing!"
     exit;
   elif [ "$(ls $path)" ]; then
-    echo "Seems the target directory ($path) is not empty!"
-    exit;
-  else
-    cd $path
-    mkdir ./public
-    mkdir ./local
-    cd public
-    git init --bare project.git
-    git init --bare extension.git
-    cd ../local
-    unset GIT_DIR
-    git clone $path/public/project.git
-    echo "The first project file." > project/project.txt
-    cd project
-    git add .
-    git commit -m "Initial import to project."
-    git push origin master
-    unset GIT_DIR
-    cd ..
-    git clone $path/public/extension.git
-    echo "The first extension file." > extension/extension.txt
-    cd extension
-    git add .
-    git commit -m "Initial import to extension."
-    git push origin master
-    cd $path
-    rm -Rf local/*
-    echo
-    echo "OK. Setup done. Now go for the presentation!"
+    echo "Seems that the target directory ($path) is not empty!"
     exit;
   fi
+  cd $path
+  mkdir ./public
+  mkdir ./local
+  cd public
+  git init --bare project.git
+  git init --bare extension.git
+  cd ../local
+  unset GIT_DIR
+  git clone $path/public/project.git
+  echo "The first project file." > project/project.txt
+  cd project
+  git add .
+  git commit -m "Initial import to project."
+  git push origin master
+  unset GIT_DIR
+  cd ..
+  git clone $path/public/extension.git
+  echo "The first extension file." > extension/extension.txt
+  cd extension
+  git add .
+  git commit -m "Initial import to extension."
+  git push origin master
+  cd $path
+  rm -Rf local/*
+  echo
+  echo "OK. Setup done. Now go for the presentation!"
+  exit;
 elif [ "$1" != "" ]; then
   echo "Welcome! To start just press enter...(or ? for a bit help)";
 else 
@@ -101,8 +100,7 @@ else
   > show.sh \"cat path/file?.txt\"
   or use 
   > show.sh install
-  to setup the demo environment. You can adjust the installation path in this scriptfile.";
-  echo $help
+  to setup the demo environment. Please define the absolute path to the demo directory in this scriptfile.";
   exit
 fi
 
@@ -147,13 +145,13 @@ while true; do
         done;;
     esac
   fi
-  
+
 ##only if not in script mode...
   if [[ $script == 0 ]]; then
     case "$IN" in
-      "a") 
+      "a")
         read -p "Time in seconds:" time
-        if [[ $time == 0 || $time == "" ]]; then 
+        if [[ $time == 0 || $time == "" ]]; then
           message="Error: Please define a numeric value greater than 0."
         else
           auto=1
@@ -161,42 +159,42 @@ while true; do
         fi
         ;;
       "?" | "h")
-        echo "Need some help?" 
+        echo "Need some help?"
         eval $help
         continue;;
-      
+
       "f" | "OH")
         sl=1;;
-        
+
       "s")
         mes="Position ${sl} saved. "
         ssl=$sl;;
-        
+
       "g")
         mes="Opened stored slide. "
         sl=$ssl;;
-        
+
       "q")
         echo "Bye bye!"
         exit;;
-        
+
       "p")
         mes="Automatic paused. "
         auto=0
         reader='read -sn1 -p "${mes}(${sl})>" IN';;
-      
+
       "[B" | "[D" | "[6~" | "b")
         (( sl-- ));;
-        
+
       [0-9]*)
         sl=$IN
         mes="Jumped to slide ${sl}. ";;
-        
+
       "[A" | "[C" | "[5~" | *)
         (( sl++ ));;
     esac
   fi
-  
+
 ##output
   if [[ $message != "" ]]; then
     echo $message
@@ -209,6 +207,7 @@ while true; do
       read -p "[0mme@local: [1m$pshort[0m $> [1m" IN
     fi
     if [ -z "$IN" ]; then
+      cd $path
       OIFS=$IFS
       IFS=';'
       arr="${scriptcmd[$ssl]}"
@@ -231,7 +230,7 @@ while true; do
         clear
         eval ${cmd/\?/$ssl}
         echo;;
-      *)    
+      *)
         eval $IN
         echo;;
     esac;

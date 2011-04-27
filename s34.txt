@@ -24,7 +24,7 @@
 |                         the project                        [1;31m8888                                  [0m|
 |                                                            [1;31m8888                                  [0m|
 |                       - not overwriting                                                          [0m|
-|                         submodules silently                                                      [0m|
+|                         submodules silently         ----------> [1;32mand much more after GSoC 2011    [0m|
 |                         with git submodule update                                                [0m|
 |                                                                                                  [0m|
 [1;37;41m-Carsten-Nielsen------------------------------------------------------------------------------------[0m
