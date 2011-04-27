@@ -34,8 +34,8 @@ scriptcmd[25]="cd ..; ls -a; git clone $path/public/project.git others; ls -a ot
 scriptcmd[26]='cd others; ls -a ext/extension'
 scriptcmd[28]='git submodule init; git submodule update'
 scriptcmd[29]="cd ..; rm -Rf others; git clone --recursive $path/public/project.git others; ls others/ext/extension";
-scriptcmd[31]='cd project/ext/extension; echo "A new file in extension." > newfile.txt; ls; git status; git add .; git status; git commit -m "Add a new file."; git log'
-scriptcmd[32]='cd ../..; echo "A new file in project." > newprojectfile.txt; ls; git status; git add . ; git status; git commit -m "Add a new file to project."; git log; git push'
+scriptcmd[31]='cd project/ext/extension; echo "A new file in extension." > newfile.txt; ls; git status; git add .; git status; git commit -m "Add a new file."'
+scriptcmd[32]='cd ../..; echo "A new file in project." > newprojectfile.txt; ls; git status; git add . ; git status; git commit -m "Add a new file to project."; git push'
 scriptcmd[33]='cd ../others; git pull; git submodule update'
 scriptcmd[34]='cd ../../public/extension.git; git log'
 
@@ -202,11 +202,11 @@ while true; do
     echo $message
     message=""
   elif [[ $script == 1 ]]; then
-    echo -n "[1m"
+    pshort=${PWD#$path}
     if [ -n "${scriptcmd[$ssl]}" ]; then
-      read -p "me@local:$PWD $ [0m(${scriptcmd[$ssl]}) [1m>" IN
+      read -p "[0mme@local: [1m$pshort [0m(${scriptcmd[$ssl]})$> [1m" IN
     else
-      read -p "me@local:$PWD $> " IN
+      read -p "[0mme@local: [1m$pshort[0m $> [1m" IN
     fi
     if [ -z "$IN" ]; then
       OIFS=$IFS
@@ -214,9 +214,9 @@ while true; do
       arr="${scriptcmd[$ssl]}"
       for x in $arr
       do
+        pshort=${PWD#$path}
         echo
-        echo -n "[1m"
-        echo "me@local:$PWD $> $x"
+        echo "[0mme@local: [1m$pshort[0m $> [1m$x"
         echo -n "[0m"
         eval "${x}"
       done
