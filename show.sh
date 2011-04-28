@@ -3,15 +3,12 @@
 ## show.sh
 # git-submodules-ascii-demo script by Carsten Nielsen <carsten@redpill-linpro.com>
 
-
 ## Settings
-#
 # Set an alternative path for your testsetup here.
-path="/home/carsten/git";
+path="$PWD/git"
 
 
-## Run
-
+## Setting some vars
 sl=0
 auto=0
 time=0
@@ -21,7 +18,7 @@ message=""
 mes=""
 script=0
 
-##The array of commands
+## The array of integrated commands /just using cd so much for beeing sure to be in the correct directory...
 scriptcmd[0]='cd $path;'
 scriptcmd[15]='ls -a;ls -a public;ls -a local' 
 scriptcmd[16]="cd local;git clone $path/public/project.git;ls -a; ls -a project"
@@ -39,8 +36,10 @@ scriptcmd[32]='cd local/project;echo "A new file in project." > newprojectfile.t
 scriptcmd[33]='cd local/others;git pull;git submodule update'
 scriptcmd[34]='cd public/extension.git;git log'
 
+## The default prompt
 reader='read -sn1 -p "${mes}(${sl})>" IN';
 
+## Some ansi formatted helptext.
 esc=$(eval 'echo -en "\e"');
 help='echo -e "\n
 \e[1mh\e[0m or \e[1m?\e[0m - show this help ;-)\n
@@ -58,13 +57,22 @@ You can use PgUp, PgDn, left, right, up, down and numeric values to jump to slid
 If you see a "'*'" at the prompt, there are some commands to execute for the actual slide.\n\n
 Press > to open console. If you just hit enter, the commands in the brackets will be executed and the output is shown.\n\n"';
 
+## Lets check if we should install the demo directory first
 if [ "$1" == "install" ]; then
   if [ ! -d $path ]; then
-    echo "Seems that the target directory ($path) is not existing!"
-    exit;
+    echo "Seems that the target directory ($path) is not existing! Create it? (y/n)"
+    read IN
+    if [ "$IN" != "y" ]; then
+      exit
+    fi
+    mkdir $path
   elif [ "$(ls $path)" ]; then
-    echo "Seems that the target directory ($path) is not empty!"
-    exit;
+    echo "Seems that the target directory ($path) is not empty! Delete contents? (y/n)"
+    read IN
+    if [ "$IN" != "y" ]; then
+      exit
+    fi
+    eval "rm -Rf $path/*"
   fi
   cd $path
   mkdir ./public
@@ -96,21 +104,19 @@ if [ "$1" == "install" ]; then
 elif [ "$1" != "" ]; then
   echo "Welcome! To start just press enter...(or ? for a bit help)";
 else 
-  echo "Uuups! You have to define a command with a counting placeholder (?) like:
-  > show.sh \"cat path/file?.txt\"
+  echo "Uuups! You can define a command with a counting placeholder (?) like:
+  > show.sh \"cat /path/file?.txt\" (you should use an absolute path here).
   or use 
   > show.sh install
-  to setup the demo environment. Please define the absolute path to the demo directory in this scriptfile.";
+  to setup the demo environment in the actual folder ($path).";
   exit
 fi
 
+## The presentation goes on ad on and on...
 cd $path;
-
-##lets go then
 while true; do
-  #only if not in script mode...
+  # Fetch the special command keys (arrows aso.)...
   if [[ $script == 0 ]]; then
-    #input
     if [[ -n "${scriptcmd[$sl]}" ]]; then 
       mes=$mes" [*]" 
     fi
@@ -146,7 +152,7 @@ while true; do
     esac
   fi
 
-##only if not in script mode...
+  # The standard presentation commands
   if [[ $script == 0 ]]; then
     case "$IN" in
       "a")
@@ -195,7 +201,7 @@ while true; do
     esac
   fi
 
-##output
+## Output
   if [[ $message != "" ]]; then
     echo $message
     message=""
