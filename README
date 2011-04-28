@@ -1,0 +1,26 @@
+show.sh - A terminal-based presentation of git submodules
+=========================================================
+
+How to start
+-------------------------------
+The script is based on bash so it should work on unix/linux systems. 
+Don't know much about cygwin... infos are appreciated ;-)
+
+* clone this repo to your local machine
+* install the demo environment: ./show.sh install
+* start the presentation with: ./show.sh "cat ~/your/dir/s?.txt"
+
+Inside the presentation
+-------------------------------
+You can switch the slides with the arrow-keys or typing a number to
+jump to slides. Use ? to get more help...
+
+If a '*' appears at the prompt, there are some commands to 
+execute analog to this slide. Use '>' and return to enter the 
+prompt-mode. You can see the commands to be executed in the 
+brackets. Just hit enter to execute them...
+
+To return back to the presentation use 'q'.
+
+Have fun.
+Carsten
