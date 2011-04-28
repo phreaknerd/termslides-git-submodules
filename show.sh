@@ -224,6 +224,7 @@ while true; do
         echo "[0mme@local: [1m$pshort[0m $> [1m$x"
         echo -n "[0m"
         eval "${x}"
+        read IN
       done
       IFS=$OIFS
       scriptcmd[$ssl]=''
